@@ -1,0 +1,23 @@
+{
+    "$schema": "./node_modules/@pterodactyl/sdk/manifest.schema.json",
+    "id": "demo",
+    "name": "Demo Account",
+    "version": "1.0.0",
+    "description": "Fill the login form with a demo account so visitors can try your panel in one click.",
+    "author": "s4way",
+    "icon": "user-round-check",
+    "requires": {
+        "panel": "^2.0.0-dev",
+        "sdk": "^2.0.0-beta.4",
+        "php": "^8.3"
+    },
+    "provider": "Demo\\DemoProvider",
+    "autoload": {
+        "Demo\\": "src"
+    },
+    "ui": {
+        "entry": "dist/client.js",
+        "mode": "native",
+        "prefix": "dm"
+    }
+}
